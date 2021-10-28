@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+      box-sizing: border-box;
+    }
+    body {
+      margin:0;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+     /* display: flex;*/
+      align-items: center;
+      justify-content: center;
+      color:#555;
+      background: #ecf0f3;
+    }
+    .main_c
+    {
+      position: relative;
+      width:600px;
+      height: 100%;
+      top:15px;
+      padding: 20px 25px 25px 25px;
+      border-radius: 40px;
+      background: #ecf0f3;
+      box-shadow: 13px 13px 20px #cbced1,
+                  -13px -13px 20px #ffffff;
+
+
+    }
+    .title {
+      text-align: center;
+      font-size: 28px;
+      padding-top: 5px;
+      padding-bottom: 10px;
+      letter-spacing: 0.5px;}
+
+      input,textarea{
+          width: 100%;
+        border: none;
+      outline:none;
+      background: none;
+      font-size: 18px;
+      color: #555;
+      padding:15px 10px 20px 5px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: inset 8px 8px 8px #cbced1,
+                  inset -8px -8px 8px #ffffff;
+    }
+
+    input[type=submit]{
+
+        outline: none;
+      border:none;
+      cursor: pointer;
+      width: 250px;
+      height: 60px;
+      border-radius: 30px;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: 'Lato', sans-serif;
+      color:#555;
+      text-align: center;
+     /* background: #24cfaa;*/
+      box-shadow: 3px 3px 8px #b1b1b1,
+                  -3px -3px 8px #ffffff;
+    }
+
+    input[type=submit]:hover
+    {
+
+outline: none;
+border:none;
+cursor: pointer;
+width: 250px;
+height: 60px;
+border-radius: 30px;
+font-size: 20px;
+font-weight: 700;
+font-family: 'Lato', sans-serif;
+color:rgb(84, 235, 122);
+text-align: center;
+/*background: #24cfaa;*/
+box-shadow: inset 3px 3px 8px #b1b1b1,
+    inset -3px -3px 8px #ffffff;
+}
+
+     label {
+        display:none;
+     }
+
+    </style>
+</head>
+<body>
+    <center>
+    <div class="main_c">
+        <div class="title">
+            Login log
+        </div>
+    <form name="search" action="">
+      
+    <label class="label">Username :</label>
+  
+    <input type="text" placeholder="User Id *" name="username"><br>
+
+    <label class="label">Password :</label><input type="password" placeholder="Password *" name="userpassword" ><br>
+    <label class="label">Mobile Number :</label><input type="tel" id="phone" name="phone" pattern="[0-9]{5}-[0-9]{5}" placeholder="Mobile Number :Number *" minlength="10" maxlength="10"><br>
+
+    <label class="label">Question</label> <input type="text" name="question" placeholder="Question ? (optional)"><br>
+    <label class="label">Answer</label> <input type="text" name="answer" placeholder="Answer ! (optional) "><br>
+
+    <label class="label">Description</label> <textarea name="Description" id="" cols="30" rows="2" placeholder="Description  (optional)"></textarea>
+    <br>
+  <span style="color:aqua"><input type="submit" value="SUBMIT" id="submit"><span>
+    </div>
+</form>
+    
+</body>
+</html>
